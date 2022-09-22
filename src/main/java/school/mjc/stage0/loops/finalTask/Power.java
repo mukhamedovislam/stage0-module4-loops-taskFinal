@@ -1,11 +1,10 @@
 package school.mjc.stage0.loops.finalTask;
+import java.lang.Math;
 
 public class Power {
     public void printPower(int numberToPrint, int power) {
-	for(int i = 1; i <= power; i++){
-		numberToPrint *= numberToPrint;
-	}
-	System.out.println(numberToPrint);
+	int result = (int) Math.pow(numberToPrint, power);
+	System.out.println(result);
     }
 
     public static void main(String[] args) {
